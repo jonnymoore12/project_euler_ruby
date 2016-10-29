@@ -1,3 +1,6 @@
+# Returns the tota number of characters required to write all of the numbers
+# one, two, ..., one thousand (1 to 1_000 inclusive)
+
 # Characters in:
 # one to nine: 36
 # ten to nineteen: 70
@@ -23,6 +26,5 @@
 # = 854 + 1851 * 9 + 11 ("onethousand".length) + "one".length * 100 + ... + "nine".length * 100
 # = 17424                                      + 36 * 100
 def number_letter_counts
-  # Returns the total number of characters writing one, two, ..., one thousand
   854 + (1851 * 9) + 11 + (36 * 100)
 end
